@@ -23,18 +23,3 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: metallb
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: default-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 172.16.180.240-172.16.180.250
----
-apiVersion: metallb.io/v1beta1
-kind: L2Advertisement
-metadata:
-  name: default
-  namespace: metallb-system
