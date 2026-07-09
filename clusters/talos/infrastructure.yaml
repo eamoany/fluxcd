@@ -15,8 +15,8 @@ metadata:
 spec:
   interval: 1h
   targetNamespace: metallb-system
-  install:
-    createNamespace: true
+  # install:
+  #   createNamespace: true
   chart:
     spec:
       chart: metallb
